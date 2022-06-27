@@ -5,14 +5,12 @@ function compareTrue(p1,p2) {
   }else {
     return false;
   }
-
-
-  // seu código aqui
 }
 
 // Desafio 2
-function calcArea() {
-  // seu código aqui
+function calcArea(base,height) {
+  b =(base*height)/2
+  return b
 }
 
 // Desafio 3
