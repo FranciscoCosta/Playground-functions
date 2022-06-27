@@ -96,7 +96,7 @@ let x = [];
     } else if (i == 'o') {
       x.push(4);
     } else if (i == 'u') {
-      x.push(2);
+      x.push(5);
     } else {
       x.push(i);
     }
@@ -123,7 +123,6 @@ function decode(string) {
     }
   }
   return (x.join(""));
-
 }
 console.log(decode('h3 th2r2!'))
 
@@ -135,7 +134,6 @@ function techList(array, string) {
     return "Vazio!"
   }else {
     array = array.sort();
-    console.log(array)
     for( i in array){
       final.push({
         tech: array[i],
@@ -147,7 +145,6 @@ function techList(array, string) {
 
 }
 
-console.log(techList(['React', 'Jest', 'HTML', 'CSS', 'JavaScript'],'Lucas'))
 
 
 
