@@ -50,7 +50,6 @@ function highestCount(numeros) {
   return cont
 }
 
-console.log(highestCount([9, 1, 2, 3, 9, 5, 7]))
 
 
 // Desafio 7
@@ -71,8 +70,20 @@ function catAndMouse(mouse,cat1,cat2) {
   }
 }
 // Desafio 8
-function fizzBuzz() {
-  // seu código aqui
+function fizzBuzz(array) {
+  let novo = []
+  for(i in array){
+    if(array[i]%3== 0 && array[i]%5==0){
+      novo.push('fizzBuzz')
+    }else if(array[i]%3== 0 && array[i]%5!==0){
+      novo.push('fizz')
+    }else if(array[i]%5== 0 && array[i]%3!==0){
+      novo.push('buzz')
+    }else{
+      novo.push('bug')
+    }
+   }
+  return novo
 }
 
 // Desafio 9
