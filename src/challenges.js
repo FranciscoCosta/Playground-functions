@@ -22,13 +22,11 @@ function splitSentence(text) {
 
 // Desafio 4
 function concatName(array1) {
-  let array2 = []
+  let array2 = [];
   let a = array1[0];
-  let b = array1[array1.length-1];
-return b+","+" "+a
+  let b = array1[array1.length - 1];
+  return b + ',' + ' ' + a;
 }
-console.log(concatName(['Lucas', 'Cassiano', 'Ferraz', 'Paolillo']))
-
 
 // Desafio 5
 function footballPoints(wins, ties) {
@@ -87,55 +85,51 @@ function fizzBuzz(array) {
 // Desafio 9
 
 function encode(string) {
-  codigo = {
-    a: 1,
-    e: 2,
-    i: 3,
-    o: 4,
-    u: 5,
-  };
-  let x = [];
+let x = [];
   for (i of string) {
-    for (z in codigo) {
-      if (i === z) {
-        x.push(codigo[z]);
-      } else {
-        x.push(i);
-        break;
-      }
+    if (i === 'a') {
+      x.push(1);
+    } else if (i == 'e') {
+      x.push(2);
+    } else if (i == 'i') {
+      x.push(3);
+    } else if (i == 'o') {
+      x.push(4);
+    } else if (i == 'u') {
+      x.push(2);
+    } else {
+      x.push(i);
     }
   }
-  let resultado = x.join('');
-  return resultado;
+  return (x.join(""));
 }
+console.log(encode('hi there!'));
 
 function decode(string) {
-  codigo = {
-    1: 'a',
-    2: 'e',
-    3: 'i',
-    4: '0',
-    5: 'u',
-  };
   let x = [];
   for (i of string) {
-    for (z in codigo) {
-      if (i === z) {
-        x.push(codigo[i]);
-      } else {
-        x.push(i);
-        break;
-      }
+    if (i === '1') {
+      x.push("a");
+    } else if (i == '2') {
+      x.push("e");
+    } else if (i == '3') {
+      x.push("i");
+    } else if (i == '4') {
+      x.push("o");
+    } else if (i == '5') {
+      x.push("u");
+    } else {
+      x.push(i);
     }
   }
-}
+  return (x.join(""));
 
-console.log(decode('h3 th2r2!'));
+}
+console.log(decode('h3 th2r2!'))
+
 
 // Desafio 10
-function techList() {
-  // seu código aqui
-}
+function techList(array, string) {}
 
 module.exports = {
   calcArea,
