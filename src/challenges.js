@@ -129,7 +129,35 @@ console.log(decode('h3 th2r2!'))
 
 
 // Desafio 10
-function techList(array, string) {}
+function techList(array, string) {
+  let final = []
+  if(array.length === 0 || string.length ===0){
+    return "Vazio!"
+  }else {
+    array = array.sort();
+    console.log(array)
+    for( i in array){
+      final.push({
+        tech: array[i],
+        name: string
+      });
+    }
+  return final 
+  }
+
+}
+
+console.log(techList(['React', 'Jest', 'HTML', 'CSS', 'JavaScript'],'Lucas'))
+
+
+
+
+
+
+
+
+
+
 
 module.exports = {
   calcArea,
