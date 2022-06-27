@@ -42,9 +42,7 @@ function highestCount(numeros) {
   let a = 0;
   let cont = 0;
   a = Math.max(...numeros)
-  console.log(a)
     for(i=0;i<numeros.length; i+=1){
-      console.log(numeros[i])
       if(numeros[i] === a){
         cont+=1;
       }
@@ -52,15 +50,26 @@ function highestCount(numeros) {
   return cont
 }
 
-
 console.log(highestCount([9, 1, 2, 3, 9, 5, 7]))
 
 
 // Desafio 7
-function catAndMouse() {
-  // seu código aqui
+function catAndMouse(mouse,cat1,cat2) {
+  let m = Math.abs(mouse);
+  let c1 = Math.abs(cat1);
+  let c2 = Math.abs(cat2);
+  let d1 = m - c1;
+  let d2 = m - c2;
+  let d3 = Math.abs(d1);
+  let d4 = Math.abs(d2);
+  if(d3>d4){
+    return 'cat2'
+  }else if (d4>d3){
+    return 'cat1'
+  }else{
+    return 'os gatos trombam e o rato foge'
+  }
 }
-
 // Desafio 8
 function fizzBuzz() {
   // seu código aqui
