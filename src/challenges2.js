@@ -35,8 +35,17 @@ console.log(generatePhoneNumber([1, 2, 3, 4, 5, 5, 7, 8, 9, 0, 10]))
 
 
 // Desafio 12
-function triangleCheck() {
-  // seu código aqui
+function triangleCheck(lineA,lineB,lineC) {
+  if(lineA+lineB > lineC && lineB+lineC > lineA && lineA + lineC> lineB){
+    if(Math.abs(lineA-lineB)< lineC && Math.abs(lineA-lineC)< lineB && Math.abs(lineC-lineB) < lineA){
+      return true;
+    }else{
+      return false;
+    }
+
+  }else{
+    return false;
+  }
 }
 
 // Desafio 13
